@@ -42,7 +42,7 @@ const TaskCard = async ({ title, tasks }) => {
         {data && data.length ? (
           <div>
             {data.map((task) => (
-              <div className="py-2 ">
+              <div className="py-2 " key={task.id}>
                 <div>
                   <span className="text-gray-800">{task.name}</span>
                 </div>
